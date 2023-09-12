@@ -8,6 +8,7 @@
   --footer-link-color: rgba(255, 255, 255, 0.6);
   --border-color: #ececec;
   --border-second-color: #eeeeee;
+  --background-color-4: #c4c4c4;
 }
 *,
 *::before,
@@ -140,7 +141,12 @@ p {
 
 /* Герой */
 .hero {
-  background-color: var(--background-color-3);
+  background-color: var(--background-color-4);
+  background-image:
+    url(../img/icons/hero/background-hero.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 1600px;
 
   text-align: center;
 
