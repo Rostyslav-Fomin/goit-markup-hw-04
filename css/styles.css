@@ -154,7 +154,7 @@ p {
 
 /* Герой */
 .hero {
-  width: 1600px;
+  max-width: 1600px;
   margin-right: auto;
   margin-left: auto;
   padding-top: 200px;
@@ -165,7 +165,7 @@ p {
     url(../img/icons/hero/background-hero.jpg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
 
   text-align: center;
 }
