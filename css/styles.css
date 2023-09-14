@@ -234,52 +234,9 @@ h1 {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
-/* .benefits-list {
-  display: flex;
-}
-.benefits-item {
-  width: 270px;
-}
-.benefits-item:not(:last-child) {
-  margin-right: 30px;
-} */
 .benefits-item {
   min-width: 270px;
 }
-/* .benefits-item::before {
-  content: '';
-  display: block;
-  width: 270px;
-  height: 120px;
-  margin-bottom: 30px;
-
-  background-color: var(--background-color-2);
-}
-.antenna::before {
-  content: '';
-  background-image: url(../img/icons/benefits/antenna.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.clock::before {
-    content: '';
-  background-image: url(../img/icons/benefits/clock.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.diagram::before {
-    content: '';
-  background-image: url(../img/icons/benefits/diagram.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.astronaut::before {
-    content: '';
-  background-image: url(../img/icons/benefits/astronaut.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-} */
 .benefits-block {
   display: flex;
   justify-content: center;
@@ -335,12 +292,6 @@ h1 {
 .team-section {
   background-color: var(--background-color-2);
 }
-/* .team-list {
-  display: flex;
-  gap: 30px;
-
-  width: 270px;
-} */
 .team-item {
   border-bottom-right-radius: 4px;
   border-bottom-left-radius: 4px;
@@ -513,26 +464,6 @@ h1 {
 .footer-link:focus {
   background-color: var(--accent-color);
 }
-/* .instagram {
-  background-image: url(../img/icons/footer/instagram.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.twitter {
-  background-image: url(../img/icons/footer/twitter.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.facebook {
-  background-image: url(../img/icons/footer/facebook.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.linkedin {
-  background-image: url(../img/icons/footer/linkedin.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-} */
 .footer-link {
   display: flex;
   justify-content: center;
@@ -600,14 +531,7 @@ h1 {
   box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
     0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
-/* .portfolio-items {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-}
-.item {
-  flex-basis: calc((100% - 60px) / 3);
-} */
+
 .link-item {
   text-decoration: none;
 }
