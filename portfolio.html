@@ -32,12 +32,10 @@
           >
           <ul class="nav-list list">
             <li class="nav-item">
-              <a class="nav-link" href="./index.html">Студія</a>
+              <a class="nav-link studio-link" href="./index.html">Студія</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link portfolio-link" href="./portfolio.html"
-                >Портфоліо</a
-              >
+              <a class="nav-link" href="./portfolio.html">Портфоліо</a>
             </li>
             <li class="nav-item"><a class="nav-link" href="#">Контакти</a></li>
           </ul>
@@ -45,12 +43,17 @@
         <ul class="contact-list list">
           <li class="contact-item">
             <a class="contact-link link" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
+              ><svg class="contact-link-icon" width="16" height="12">
+                <use href="./img/sprite.svg#envelope"></use>
+              </svg>
+              <span>info@devstudio.com</span></a
             >
           </li>
           <li class="contact-item">
             <a class="contact-link link" href="tel:+380961111111"
-              >+38 096 111 11 11</a
+              ><svg class="contact-link-icon" width="16" height="12">
+                <use href="./img/sprite.svg#smartphone"></use></svg
+              ><span>+38 096 111 11 11</span></a
             >
           </li>
         </ul>
@@ -61,9 +64,9 @@
 
     <main>
       <!-- Портфоліо -->
-        <section class="portfolio-section section">
-          <div class="container">
-            <h1 class="section-tittle visually-hidden">Наше портфоліо</h1>
+      <section class="portfolio-section section">
+        <div class="container">
+          <h1 class="section-tittle visually-hidden">Наше портфоліо</h1>
           <ul class="portfolio-list list">
             <li class="portfolio-item">
               <button class="btn btn-first" type="button">Усі</button>
@@ -218,8 +221,8 @@
               </a>
             </li>
           </ul>
-          </div>
-        </section>
+        </div>
+      </section>
     </main>
     <!-- Підвал -->
     <footer class="page-footer">
@@ -253,7 +256,12 @@
                 href="https://www.instagram.com/"
                 target="_blank"
                 rel="noreferrer noopener"
-              ></a>
+                aria-label="icon Instagram"
+              >
+                <svg class="footer-icon" width="20" height="20">
+                  <use href="./img/sprite.svg#instagram"></use>
+                </svg>
+              </a>
             </li>
             <li class="links-item">
               <a
@@ -261,6 +269,10 @@
                 href="https://twitter.com/"
                 target="_blank"
                 rel="noreferrer noopener"
+                aria-label="icon Twitter"
+              >
+                <svg class="footer-icon" width="20" height="20">
+                  <use href="./img/sprite.svg#twitter"></use></svg
               ></a>
             </li>
             <li class="links-item">
@@ -269,6 +281,9 @@
                 href="https://uk-ua.facebook.com/"
                 target="_blank"
                 rel="noreferrer noopener"
+                aria-label="icon Facebook"
+                ><svg class="footer-icon" width="20" height="20">
+                  <use href="./img/sprite.svg#facebook"></use></svg
               ></a>
             </li>
             <li class="links-item">
@@ -277,6 +292,9 @@
                 href="https://ua.linkedin.com/"
                 target="_blank"
                 rel="noreferrer noopener"
+                aria-label="icon Linkedin"
+                ><svg class="footer-icon" width="20" height="20">
+                  <use href="./img/sprite.svg#linkedin"></use></svg
               ></a>
             </li>
           </ul>

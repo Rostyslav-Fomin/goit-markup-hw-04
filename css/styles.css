@@ -9,6 +9,8 @@
   --border-color: #ececec;
   --border-second-color: #eeeeee;
   --background-color-4: #c4c4c4;
+  --background-color-5: rgba(255, 255, 255, 0.1);
+  --team-icons-color: #afb1b8;
 
   --card-gap: 30px;
   --grid-items: 4;
@@ -120,6 +122,8 @@ p {
 }
 .contact-list {
   display: flex;
+  justify-content: center;
+  align-items: center;
   margin-left: auto;
 }
 .contact-item:not(:last-child) {
@@ -140,6 +144,10 @@ p {
 .contact-link:hover,
 .contact-link:focus {
   color: var(--accent-color);
+}
+.contact-link-icon {
+  margin-right: 10px;
+  fill: currentColor;
 }
 
 /* Основний блок */
@@ -239,7 +247,7 @@ h1 {
 .benefits-item {
   min-width: 270px;
 }
-.benefits-item::before {
+/* .benefits-item::before {
   content: '';
   display: block;
   width: 270px;
@@ -271,6 +279,20 @@ h1 {
   background-image: url(../img/icons/benefits/astronaut.svg);
   background-repeat: no-repeat;
   background-position: center;
+} */
+.benefits-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding-top: 25px;
+  padding-right: 100px;
+  padding-bottom: 25px;
+  padding-left: 100px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+
+  background-color: var(--background-color-2);
 }
 .benefits-subtittle {
   color: var(--main-black-color);
@@ -297,6 +319,7 @@ h1 {
 }
 .gallery-list {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
 }
 .gallery-item {
@@ -333,9 +356,12 @@ h1 {
 .team-conteiner {
   padding-top: 30px;
   padding-bottom: 30px;
+
+  background-color: var(--background-color-1);
 }
 .team-subtittle {
   color: var(--main-black-color);
+
   font-size: 16px;
   font-weight: 500;
   line-height: 1.2;
@@ -344,12 +370,75 @@ h1 {
   margin-bottom: 10px;
 }
 .team-text {
+  margin-bottom: 16px;
+
   color: var(--text-color);
+
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.48px;
 }
+.team-icons-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icons-item:not(:last-child) {
+  margin-right: 10px;
+}
+.team-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
+  width: 44px;
+  height: 44px;
+
+  background-color: var(--background-color-1);
+  border-radius: 50%;
+}
+.team-icon {
+  fill: var(--team-icons-color);
+}
+.team-link:hover,
+.team-link:focus {
+  background-color: var(--accent-color);
+}
+.team-link:hover .team-icon,
+.team-link:focus .team-icon {
+  fill: var(--background-color-1);
+}
+/* Клієнти */
+.clients-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.clients-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 170px;
+  height: 92px;
+
+  border-radius: 4px;
+  border: 1px solid var(--team-icons-color);
+  color: var(--team-icons-color);
+}
+/* .clients-item:not(:last-child) {
+  margin-right: 10px;
+} */
+.clients-link:hover,
+.clients-link:focus {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+.clients-icon {
+  fill: currentColor;
+}
 /* Підвал */
 .page-footer {
   background-color: var(--background-color-3);
@@ -358,9 +447,9 @@ h1 {
   padding-bottom: 60px;
 }
 .footer-container {
-display: flex;
-align-items: baseline;
-flex-wrap: wrap;
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
 }
 .container-address {
   margin-right: 70px;
@@ -420,19 +509,11 @@ flex-wrap: wrap;
 .links-item:not(:last-child) {
   margin-right: 10px;
 }
-.footer-link {
-  display: block;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-
-  background-color: rgba(255, 255, 255, 0.1);
-}
 .footer-link:hover,
 .footer-link:focus {
   background-color: var(--accent-color);
 }
-.instagram {
+/* .instagram {
   background-image: url(../img/icons/footer/instagram.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -451,7 +532,20 @@ flex-wrap: wrap;
   background-image: url(../img/icons/footer/linkedin.svg);
   background-repeat: no-repeat;
   background-position: center;
+} */
+.footer-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--background-color-5);
 }
+.footer-icon {
+  fill: var(--background-color-1);
+}
+
 /* Сторінка "Портфоліо" */
 /* Шапка */
 .portfolio-link {
@@ -487,16 +581,22 @@ flex-wrap: wrap;
 .btn-first {
   color: var(--background-color-1);
   background-color: var(--accent-color);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+
 }
 .btn:hover,
 .btn:focus {
   color: var(--background-color-1);
   background-color: var(--accent-color);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+    0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
 .item {
   --grid-items: 9;
   min-width: 370px;
-
+}
+.item:hover,
+.item:focus {
   box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
     0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
